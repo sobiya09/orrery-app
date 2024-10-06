@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Orrery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #0b0d1c;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background-color: #1e1e2f;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #ffd700;
+            font-family: 'Playfair Display', serif;
+        }
+        .section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section h2 {
+            font-size: 32px;
+            color: #ffd700;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #1e1e2f;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            color: #fff;
+            font-size: 14px;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Orrery</h1>
+</header>
+
+<section class="section">
+    <h2>Understanding the Orrery</h2>
+    <p>
+        The Orrery serves as the core of our application, functioning as the primary entry point 
+        for visualizing the motions of the planets in our solar system. It inherits from the 
+        JavaFX Application class, which allows for a rich graphical user interface.
+    </p>
+    <p>
+        The <strong>start</strong> method is called during the graphical initialization process. 
+        This method sets up the main Stage object and builds the application layout through the 
+        <strong>buildLayout</strong> method. The Orrery object manages the window's contents, 
+        encapsulating both the Space and Info classes, which represent the moving planets and 
+        the information panel, respectively.
+    </p>
+    <p>
+        Initially, the Orrery class directly managed the Planet class. However, as the interface 
+        evolved, the responsibilities became blurred. Consequently, the planets were separated 
+        into the Space class, focusing solely on their animation, while the Info class handles 
+        the display of planetary data. This separation allows for a clearer structure and better 
+        management of the application's components.
+    </p>
+</section>
+
+<section class="section">
+    <h2>What is an Orrery?</h2>
+    <p>
+        An orrery is an apparatus that demonstrates the relative positions and motions of 
+        celestial bodies in the solar system, typically represented by balls that are moved 
+        by a clockwork mechanism. In our digital version, these movements are simulated to 
+        provide an interactive experience for users, allowing them to explore the dynamics 
+        of planetary motion in an engaging way.
+    </p>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 The Orrery | <a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
